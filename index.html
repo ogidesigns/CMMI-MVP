@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">CMMI</a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Select a Model
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="modelOne.html">Model Team One</a></li>
+              <li><a class="dropdown-item" href="modelTwo.html">Model Team Two</a></li>
+              <li><a class="dropdown-item" href="modelThree.html">Model Team Three</a></li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">Log-Out</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <section class="row">
+              <div class="col-12 greeting">
+                <h1>Welcome</h1>
+                <h2>[First] [Last Name]</h2>
+              </div>
+            </section>
+            <section class="row">
+              <div class="col-12 sideNav">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Models</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="help.html">Help</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="col-10">
+            <section class="row">
+              <div class="col-12 select">
+                <div class="dropdown"> <!--Dropdown to select model team---------------------------------------------------------->
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select a Model
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="modelOne.html">Model Team One</a></li>
+                    <li><a class="dropdown-item" href="modelTwo.html">Model Team Two</a></li>
+                    <li><a class="dropdown-item" href="modelThree.html">Model Team Three</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</html>
