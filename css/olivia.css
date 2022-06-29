@@ -12,6 +12,13 @@
 
 /*------------------------------Main Content ---------------------------------------------------------------------------------------*/
 #mainContent {border: 1px solid #f2f2f2; padding: 5%;}
+.nav-tabs {margin-top: 1em;}
+#mainContent .nav-tabs .active, #mainContent .nav-item .active:hover {border-radius: 0px; border-top: 4px solid blue; color: blue; font-weight: 600;}
+#mainContent .nav-tabs:hover {color: blue; font-weight: 500;}
+#mainContent .nav-item a:hover {border:0px;}
+tbody th {font-weight: 400;}
+thead th {font-weight: 500;}
+.upload {margin-top: 1em;}
 
 /*----------Footer ----------------------------------------------------------------------------------------------------------------*/
 footer {padding: 3%;}
