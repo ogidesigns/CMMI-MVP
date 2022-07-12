@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="7;url=upload03.html" />
     <title>CMMI | MVP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="css/olivia.css" rel="stylesheet">
@@ -14,7 +15,7 @@
           <a class="navbar-brand">CMMI</a>
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Select a Model Team
+              Select a Model
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="modelOne.html">Model Team One</a></li>
@@ -79,55 +80,85 @@
                     <a class="nav-link" href="files.html">Files</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="team.html">Team Members</a>
+                    <a class="nav-link"  href="team.html">Team Members</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="upload.html">Upload </a>
-                    <!--span class="btn btn-default btn-file">
-                      Browse <input type="file">
-                    </span-->
+                    <a class="nav-link active" aria-current="page" href="upload.html">Upload </a>
                   </li>
                 </ul>
               </div>
             </section>
-            <section class="row"><!-----Activity Table----------------------------------------------------------->
-              <div class="col-12 activity table-responsive">
-                <table class="table table-striped table-hover">
+            <section class="row"><!-----Upload Area----------------------------------------------------------->
+              <div class="col-12 upload">
+                <span class="btn btn-default btn-file">
+                  Browse <input type="file">
+                </span>
+              </div>
+              <div class="col-12">
+                <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">First Name</th>
-                      <th scope="col">Last Name</th>
-                      <th scope="col">Email</th>
+                      <th scope="col">File</th>
+                      <th scope="col">Progress</th>
+                      <th scope="col">Status</th>
+                      <th scope="col"> </th>
                     </tr>
                   </thead>
-                  <tbody class="table-group-divider">
+                  <tbody>
                     <tr>
-                      <th scope="row">Bugs</th>
-                      <td>Bunny</td>
-                      <td><a href="mailto:bugs.bunny@cms.hhs.gov">bugs.bunny@cms.hhs.gov</a></td>
+                      <th scope="row">modelOneBAF.csv</th>
+                      <td> 
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                      </td>
+                      <td>File Uploading</td>
+                      <td>
+                        <div class="spinner-border text-primary" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">Lola</th>
-                      <td>Bunny</td>
-                      <td><a href="mailto:lola.bunny@cms.hhs.gov">lola.bunny@cms.hhs.gov</a></td>
+                      <th scope="row">modelOnePAF.csv</th>
+                      <td> 
+                        <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+                      </td>
+                      <td>File Uploaded</td>
+                      <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">Daffy</th>
-                      <td>Duck</td>
-                      <td><a href="mailto:daffy.duck@cms.hhs.gov">daffy.duck@cms.hhs.gov</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Foghorn</th>
-                      <td>Leghorn</td>
-                      <td><a href="mailto:foghorn.leghorn@cms.hhs.gov">foghorn.leghorn@cms.hhs.gov</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Road</th>
-                      <td>Runner</td>
-                      <td><a href="mailto:road.runner@cms.hhs.gov">road.runner@cms.hhs.gov</a></td>
+                      <th scope="row">modelOneFile.csv</th>
+                      <td> 
+                        <div class="progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                      </td>
+                      <td>Scanning for Viruses</td>
+                      <td>
+                        <div class="spinner-border text-warning" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
+              </div>
+              <div class="col-12 tips">
+                <h3>Tips</h3>
+                <ul>
+                  <li>Only CSV formmated files can be uploaded.</li>
+                  <li>All files must follow the <a href="help.html">appropriate naming conventions</a>.</li>
+                  <li>Check back to ensure all files have successfully uploaded and were sent.</li>
+                  <li>You can upload up to 10 files at a time</li>
+                  <li>If a virus was detected reach out to the <a href="help.html">help desk</a>.</li>
+                </ul>
               </div>
             </section>
           </div>

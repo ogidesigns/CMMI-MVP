@@ -24,31 +24,27 @@
               Select a Model Team
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="modelOne.html" aria-current="true">Model Team One</a></li>
+              <li><a class="dropdown-item" href="modelOne.html">Model Team One</a></li>
               <li><a class="dropdown-item" href="modelTwo.html">Model Team Two</a></li>
               <li><a class="dropdown-item active" href="modelThree.html">Model Team Three</a></li>
             </ul>
           </div>
           <form class="d-flex" role="search">
-            <a class="btn btn-outline-light" role="button" href="https://mo-idp.cms.gov/login">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
-                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
-                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z"/>
-              </svg>
-               Login
-             </a>
+            <button class="btn btn-outline-light" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+  <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+</svg> Log-Out</button>
           </form>
         </div>
       </nav>
     </header>
     <main>
       <div class="container-fluid">
-        <div class="row" id="timeOut">
+        <div class="row">
           <div class="col-2 sidePanel">
             <section class="row">
-              <div class="col-12 greeting text-center bg-danger">
-                <h5 class="text-white">Your connection has timed out<br/>
-                <a href="https://mo-idp.cms.gov/login" class="btn btn-outline-light">Login</a></h5>
+              <div class="col-12 greeting text-center bg-light">
+                <h1>Welcome</h1>
+                <p>first.last@cms.hhs.gov</p>
               </div>
             </section>
             <section class="row">
@@ -81,41 +77,63 @@
                   </ol>
                 </nav>
               </div>
+              <div class="col-2">
+                <!--a class="btn btn-primary" href="upload.html" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+  <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z"/>
+</svg> Upload File(s)</a-->
+              </div>
             </section>
             <section class="row"><!---Sub Navigation ------------------------------------------------------------------------->
               <div class="col-12 subNav">
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link"  href="https://mo-idp.cms.gov/login">Activity</a>
+                    <a class="nav-link"  href="modelOne.html">Activity</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://mo-idp.cms.gov/login">Files</a>
+                    <a class="nav-link" href="files.html">Files</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="modelThreeupload.html">Upload </a>
+                    <a class="nav-link active" aria-current="page" href="upload.html">Upload </a>
                   </li>
                 </ul>
               </div>
             </section>
             <section class="row"><!-----Upload Area----------------------------------------------------------->
               <div class="col-12 upload">
-                <span >
-                  Browse <input class="btn btn-default btn-file" type="file" name="select files" multiple id="uploads" accept=".csv">
+                <span class="btn btn-default btn-file">
+                  Browse <input type="file">
                 </span>
-                <a class="btn btn-primary" href="modelThreeupload00.html" role="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
-                    <path d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716.075.09.141.175.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0z"/>
-                  </svg>
-                   Select Files
-                </a>
+                <ul class="list-group list-group-flush" id="queue">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fileName">modelThreeBAF.csv</span> <span class="fileSize">3.3 KB</span>
+                   <span class="badge text-bg-info">
+                      <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      This file is being uploaded.
+                    </span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fileName">modelThreePAF.csv</span> <span class="fileSize">5.1 KB</span>
+                   <span class="badge text-bg-warning">
+                      Application cannot be reached
+                    </span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fileName">modelThreeMaintenance.csv</span> <span class="fileSize">7.3 KB</span>
+                   <span class="badge text-bg-secondary">
+                      Application is slow
+                    </span>
+                  </li>
+                </ul>
                 <h3>Tips</h3>
                 <ul>
                   <li>Only CSV formated files can be uploaded.</li>
-                  <li>All files must follow the <a href="https://mo-idp.cms.gov/login">appropriate naming conventions</a>.</li>
-                  <li><a href="https://mo-idp.cms.gov/login">Check back</a> to ensure all files have successfully uploaded and were sent.</li>
+                  <li>All files must follow the <a href="help.html">appropriate naming conventions</a>.</li>
+                  <li><a href="activityOne.html">Check back</a> to ensure all files have successfully uploaded and were sent.</li>
                   <li>Response and Summary files will be available by EOD this Friday.</li>
                   <li>You can upload up to 10 files at a time</li>
-                  <li>If a virus was detected reach out to the <a href="https://mo-idp.cms.gov/login">help desk</a>.</li>
+                  <li>If a virus was detected reach out to the <a href="help.html">help desk</a>.</li>
                 </ul>
               </div>
             </section>
