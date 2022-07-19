@@ -1,28 +1,58 @@
 /* Navigation ----------------------------------------------------*/
+body header .bg-primary {background-color: #00395e !important; }
 .navbar-brand {font-weight: 600;}
 .wayFinding {margin-bottom: 1em;}
 .official {max-height: 3em; background-color: #eee; padding: 1em 2em; margin-bottom: 1em; color: #262626; font-size: 9pt;}
 .breadcrumb-item {padding-top: 7px;}
 
 /*------Side Navigation-------------------------------------------------------------------------------------------------------------------*/
-.sidePanel 
-.greeting {padding-top:  1em; padding-bottom: 1em;}
+.sidePanel .bg-light {background-color: #f2f2f2 !important;}
+.greeting .btn {margin-top: 1em;}
+.greeting {padding-top: 1em; padding-bottom: 1em;}
 .sideNav {margin-top: 1em; padding-right: 0em;}
-.currentSection {border-left:  4px solid blue; border-top:  1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2;}
+.currentSection {border-left:  4px solid #0071bc; border-top:  1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2;}
+#timeOut .bg-danger {background-color: #cc1937 !important;} /*$color-error-darkest*/
 
 /*------------------------------Main Content ---------------------------------------------------------------------------------------*/
+main {min-height: 500px;}
+
 #mainContent {border: 1px solid #f2f2f2; padding: 5%;}
 .nav-tabs {margin-top: 1em;}
-#mainContent .nav-tabs .active, #mainContent .nav-item .active:hover {border-radius: 0px; border-top: 4px solid blue; color: blue; font-weight: 600;}
-#mainContent .nav-tabs:hover {color: blue; font-weight: 500;}
+#mainContent .nav-tabs .active, #mainContent .nav-item .active:hover {border-radius: 0px; border-top: 4px solid #0071bc; color: #0071bc; font-weight: 600;}
+#mainContent .nav-tabs:hover {color: #0071bc; font-weight: 500;}
 #mainContent .nav-item a:hover {border:0px;}
+#mainContent .nav-link, #mainContent table a, .upload ul li a, .sidePanel ul li a, .breadcrumb-item a, .card a {color: #0071bc;} /*$color-primary*/
 tbody th {font-weight: 400;}
 thead th {font-weight: 500;}
-.upload {margin-top: 1em;}
+.upload, .accordion, .card {margin-top: 1em;}
 #mainContent h3 {margin-top: 3em;}
-
+td:first-child {text-align: right;}
+#queue li {line-height: 3em;}
+#queue .badge {font-size: 1em; line-height: 1em; font-weight: 500;}
+.fileName {min-width: 300px; display: inline-block;}
+.fileName button {margin-right: 1em;}
+#uploadAll {margin-top: 1em;}
+.spinner-border {
+    --bs-spinner-width: 1rem;
+    --bs-spinner-height: 1rem;
+}
+#mainContent .btn-primary {background-color: #0071bc !important;}
+table {margin-top: 1em;}
+/*-------------------------Upload Screens ----------------------------------------------------------------------------------------*/
+.upload .list-group-item-danger {background-color: #fce8ec; color: #720e1f;}
+#queue .text-bg-danger {background-color: #9f142b !important; color: #fff;}
+#queue #uploadAll {color:  #fff;}
+#queue .text-bg-info {background-color: #02bfe7 !important; color: #016074 !important;}
+#queue .text-bg-warning {background-color: #dfb01c !important; color: #7c6210 !important;}
+#queue .text-bg-success {background-color: #107b0d !important;}
+#mainContent table .text-bg-warning {background-color: #f9ca35 !important;}
 /*----------Footer ----------------------------------------------------------------------------------------------------------------*/
-footer {padding: 3%;}
-footer.bg-primary a {color: #fff;}
+footer {padding: 3%; background-color: #00395e;}
+footer a {color: #fff;}
 footer ul li {list-style-type: none;}
 footer button {margin-top:  1em;}
+
+/***********-Media Queries**********************************/
+@media screen and (min-width: 1280px) {
+	#mainContent {min-height: 800px;}
+}
